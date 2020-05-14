@@ -1,0 +1,45 @@
+$black-bg :#121212;
+$black-text: white;
+@mixin  custom-mode($background_color:$black-bg,$text_color:$black-text) {
+    background-color: $black-bg;
+    color: $black-text;
+}
+@mixin  custom-height($h,$w) {
+    height: $h;
+    width: $w;
+}
+.alertMsg{
+    margin-bottom:0;
+}
+#carouseimg{
+    @include custom-height(600px,100%);
+}
+.dark-mode{
+    @include custom-mode();
+}
+.row-content{
+    margin:40px 0px;
+}
+#summer-card
+{
+    margin-top: 20px;
+    @include custom-height(auto,auto);
+}
+.summer-sales-h{ 
+    display: inline; 
+    font-family:'Headland One', serif; ;
+    font-weight: bold;
+    font-size: 3rem;
+    @include custom-mode(black, white);
+    opacity: 0.8;
+}
+#carousel1{
+    @include custom-height(600px,100% )
+}
+#summer-card:hover{
+    overflow: hidden;
+    transform: scale(1.1);
+    transition: 0.4s;
+    @include custom-height(auto,auto);
+
+}

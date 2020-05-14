@@ -1,0 +1,28 @@
+$(document).ready(function(){
+   $("#changeMode").click(function(){
+    if($("#changeMode").children("span").hasClass('fa-moon-o')){
+        $("#changeMode").children("span").removeClass('fa-moon-o');
+        $("#changeMode").children("span").addClass('fa-sun-o');
+        $("#changeMode").children("span").addClass('fa-inverse');
+        $("nav").removeClass('bg-light');
+        $("nav").addClass('bg-dark');
+        $("nav").removeClass('navbar-light');
+        $("nav").addClass('navbar-dark');
+        $("#changeMode").removeClass('btn-outline-dark');
+        $("#changeMode").addClass('btn-outline-light');
+        $("body").addClass('dark-mode');
+    }
+    else{
+        $("#changeMode").children("span").removeClass('fa-sun-o');
+        $("#changeMode").children("span").addClass('fa-moon-o');
+        $("#changeMode").children("span").removeClass('fa-inverse');
+        $("nav").removeClass('bg-dark');
+        $("nav").addClass('bg-light');
+        $("nav").removeClass('navbar-dark');
+        $("nav").addClass('navbar-light');
+        $("#changeMode").removeClass('btn-outline-light');
+        $("#changeMode").addClass('btn-outline-dark');
+        $("body").removeClass('dark-mode');
+       }
+   })
+})

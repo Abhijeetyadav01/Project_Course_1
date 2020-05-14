@@ -1,0 +1,38 @@
+.alertMsg {
+  margin-bottom: 0; }
+
+#carouseimg {
+  height: 600px;
+  width: 100%; }
+
+.dark-mode {
+  background-color: #121212;
+  color: white; }
+
+.row-content {
+  margin: 40px 0px; }
+
+#summer-card {
+  margin-top: 20px;
+  height: auto;
+  width: auto; }
+
+.summer-sales-h {
+  display: inline;
+  font-family: 'Headland One', serif;
+  font-weight: bold;
+  font-size: 3rem;
+  background-color: #121212;
+  color: white;
+  opacity: 0.8; }
+
+#carousel1 {
+  height: 600px;
+  width: 100%; }
+
+#summer-card:hover {
+  overflow: hidden;
+  transform: scale(1.1);
+  transition: 0.4s;
+  height: auto;
+  width: auto; }
