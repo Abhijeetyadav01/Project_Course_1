@@ -6,7 +6,7 @@
   width: 100%; }
 
 .dark-mode {
-  background-color: #121212;
+  background-color: black;
   color: white; }
 
 .row-content {
@@ -22,7 +22,7 @@
   font-family: 'Headland One', serif;
   font-weight: bold;
   font-size: 3rem;
-  background-color: #121212;
+  background-color: black;
   color: white;
   opacity: 0.8; }
 
@@ -36,3 +36,38 @@
   transition: 0.4s;
   height: auto;
   width: auto; }
+
+.sales-badge {
+  padding: 8px; }
+
+.footer {
+  background-color: #696e68;
+  min-height: 150px;
+  padding: 40px;
+  margin-bottom: 0px; }
+
+.count-down {
+  display: flex;
+  margin: 0px 20px; }
+  .count-down div {
+    margin-left: 10px;
+    padding: 10px 5px;
+    background-color: black;
+    color: white; }
+
+#Search-panel {
+  border-radius: 10px;
+  margin: 30px; }
+
+#Search-panel::placeholder {
+  text-align: right; }
+
+.card {
+  margin-bottom: 20px; }
+
+.dev {
+  height: 100%;
+  max-width: 400px; }
+
+nav {
+  margin-bottom: 30px; }

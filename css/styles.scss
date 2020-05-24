@@ -1,8 +1,8 @@
 $black-bg :#121212;
 $black-text: white;
-@mixin  custom-mode($background_color:$black-bg,$text_color:$black-text) {
-    background-color: $black-bg;
-    color: $black-text;
+@mixin  custom-mode($background_colors,$text_color) {
+    background-color: $background_colors;
+    color: $text_color;
 }
 @mixin  custom-height($h,$w) {
     height: $h;
@@ -15,7 +15,7 @@ $black-text: white;
     @include custom-height(600px,100%);
 }
 .dark-mode{
-    @include custom-mode();
+    @include custom-mode(black,rgb(255, 255, 255));
 }
 .row-content{
     margin:40px 0px;
@@ -42,4 +42,39 @@ $black-text: white;
     transition: 0.4s;
     @include custom-height(auto,auto);
 
+}
+.sales-badge{
+    padding: 8px;
+}
+.footer{
+    background-color: rgb(105, 110, 104);
+    min-height: 150px;
+    padding: 40px;
+    margin-bottom: 0px;
+}
+.count-down{
+    display: flex;
+    margin:0px 20px;
+    div{
+        margin-left: 10px;
+        padding: 10px 5px;
+        @include custom-mode(black,white);
+    }
+}
+#Search-panel{
+    border-radius: 10px;
+    margin:30px;
+}
+#Search-panel::placeholder{
+    text-align: right;
+}
+.card{
+    margin-bottom: 20px;
+}
+.dev{
+    height: 100%;
+    max-width: 400px;
+}
+nav{
+    margin-bottom: 30px;
 }
